@@ -153,14 +153,20 @@ body p {
 
 .c-active {
 	border: 2px solid white;
+	
 }
 
 .c-inactive {
-	border: none;
 	border: 2px solid #eac500;
 	background-color: #eac500;
 	color: black;
 	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.c-inactive:hover {
+	border: 2px solid #ffe973 ;
+	background-color: #ffe973;
 }
 
 /* .on {
@@ -354,7 +360,6 @@ body p {
 	-webkit-clip-path: polygon(0 calc(0% + 15vw),100% 0,100% 100%, 0 100%);
     clip-path: polygon(0 calc(0% + 15vw),100% 0,100% 100%, 0 100%);
 }
-}
 
 .contact p {
 	font-size: 0.9em;
@@ -476,11 +481,18 @@ footer p {
 
 .social-media {
 	float: right;
+	cursor: pointer;
 }
 
 .fab, .fas {
 	font-size: 16px;
 	margin-left: 16px;
+	opacity: 0.4;
+	transition: opacity 0.2s;
+}
+
+.fab:hover, .fas:hover {
+	opacity: 1;
 }
 
 @media only screen and (max-width: 987px) {
