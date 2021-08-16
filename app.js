@@ -8,10 +8,10 @@ app.get ("/", function(req,res){
 // Static folder
 app.use(express.static(__dirname + "/public"));
 
-app.listen(3000, () => {
-  console.log('Persus Vincere listening on port 3000!');
-});
-
-// app.listen(process.env.PORT, process.env.IP, function(){
-//    console.log("Persus Vincere Server Has Started!");
+// app.listen(3000, () => {
+//   console.log('Persus Vincere listening on port 3000!');
 // });
+
+app.listen(process.env.PORT, process.env.IP, function(){
+   console.log("Persus Vincere Server Has Started!");
+});
